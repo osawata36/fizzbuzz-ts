@@ -1,6 +1,7 @@
-//#import { sum } from '../foo';
+import { FizzBuzz  } from './FizzBuzz';
 
-test('basic', () => {
-  expect("1").toBe("1");
+test('1を渡すと文字列1を返す', () => {
+  const fizzbuzz = new FizzBuzz()
+  expect(fizzbuzz.convert(1).toBe("1"))
 });
 
