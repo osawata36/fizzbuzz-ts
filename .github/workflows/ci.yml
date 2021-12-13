@@ -1,0 +1,31 @@
+name: CI sample
+
+on:
+  push:
+    branches:
+      [ main ]
+
+  pull_request:
+    branches:
+      [ main ]
+
+jobs:
+  test:
+    name: jest-test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: setup node with cache option
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'npm'
+
+      - name: Test
+        run: |
+          npm ci
+          npm test
+
+
