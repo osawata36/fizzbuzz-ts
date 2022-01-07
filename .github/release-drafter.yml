@@ -1,12 +1,11 @@
 name-template: 'v$NEXT_MINOR_VERSION 🌈'
 tag-template: 'v$NEXT_MINOR_VERSION'
+exclude-labels:
+  - 'ignore-for-changelog'
 categories:
-
-  - title: Breaking Changes 🛠
+  - title: '❗ Breaking Changes'  
     labels:
-      - major
       - breaking-change
-
   - title: '🚀 Features'
     labels:
       - 'feature'
@@ -16,24 +15,33 @@ categories:
       - 'fix'
       - 'bugfix'
       - 'bug'
+  - title: '⚡ Performance improvements'
+    labels:
+      - 'performance'
   - title: '🧰 Maintenance'
     labels:
       - 'chore'
       - 'refactor'
-exclude-labels:
-  - 'ignore-for-changelog'
+  - title: '🏭 Tests'
+    labels:
+      - 'tests'
+  - title: '📖 Docs'
+    labels:
+      - 'docs'
+  - title: '🛠 Examples'
+    labels:
+      - 'examples'
+  - title: '🧰 Misc'
+    labels:
+      - 'build'
+      - 'meta'
+      - 'chore'
+      - 'CI'
+  - title: '📦 Dependencies'
+    labels:
+      - 'dependencies'
 change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
-version-resolver:
-  major:
-    labels:
-      - 'major'
-  minor:
-    labels:
-      - 'minor'
-  patch:
-    labels:
-      - 'patch'
-  default: patch
+change-template: '- #$NUMBER: $TITLE'
 template: |
   ## Changes
 
