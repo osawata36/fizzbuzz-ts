@@ -1,4 +1,4 @@
-# 手動実行するワークフロー
+# This is a basic workflow that is manually triggered
 
 name: Bump version
 
@@ -35,7 +35,7 @@ jobs:
     - name: Check out source
       uses: actions/checkout@v2
       with:
-        persist-credentials: false
+        ssh-key: ${{ secrets.DEPLOY_KEY }}
 
     - name: Setup Node.js
       uses: actions/setup-node@v2
@@ -56,4 +56,3 @@ jobs:
 
     - name: Push latest version
       run: git push origin main --follow-tags
-      # run: git push origin develop --follow-tags
