@@ -65,7 +65,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Get Version
-        run: VERSION=npx -c 'echo "$npm_package_version"'
+        run: |
+          version=npx -c 'echo "$npm_package_version"'
+          echo "::set-output name=VERSION::${version}"
+        id: get-version
+
       - name: Create Release Notes
         uses: actions/github-script@v4.0.2
         with:
@@ -73,6 +77,6 @@ jobs:
           script: |
             await github.request(`POST /repos/${{ github.repository }}/releases`, {
               # tag_name: "${{ github.ref }}",
-              tag_name: "v${{ VERSION }}",
+              tag_name: "v${{ steps.get-version.outputs.VERSION }}",
               generate_release_notes: true
             });
