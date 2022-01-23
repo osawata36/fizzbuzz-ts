@@ -1,7 +1,7 @@
 {
   "name": "fizzbuzz-ts",
   "description": "Studying FizzBuzz in Typescript.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": {
     "name": "Osamu Watanabe"
   },
