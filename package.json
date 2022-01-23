@@ -1,4 +1,11 @@
 {
+  "name": "fizzbuzz-ts",
+  "description": "Studying FizzBuzz in Typescript.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Osamu Watanabe"
+  },
+  "license": "MIT",
   "scripts": {
     "start": "npm run build:live",
     "test": "jest",
