@@ -1,6 +1,9 @@
 changelog:
-  exclude-labels:
-    - 'ignore-for-changelog'
+  exclude:
+    labels:
+      - 'ignore-for-changelog'
+    authors:
+      - octocat
   categories:
     - title: '❗ Breaking Changes'  
       labels:
@@ -39,9 +42,3 @@ changelog:
     - title: '📦 Dependencies'
       labels:
         - 'dependencies'
-  change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
-  change-template: '- #$NUMBER: $TITLE'
-  template: |
-    ## Changes
-
-    $CHANGES
