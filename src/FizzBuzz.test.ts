@@ -13,3 +13,7 @@ test('1を渡すと文字列1を返す', () => {
 test('3を渡すと文字列Fizzを返す', () => {
   expect(fizzbuzz.convert(3)).toBe('Fizz')
 })
+
+test('5を渡すと文字列Buzzを返す', () => {
+  expect(fizzbuzz.convert(5)).toBe('Buzz')
+})
