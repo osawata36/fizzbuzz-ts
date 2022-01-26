@@ -1,6 +1,6 @@
 [breaking-change]
 color = "d73a4a"
-name = "bug"
+name = "breaking-change"
 description = "Breaking changes"
 
 [feature]
