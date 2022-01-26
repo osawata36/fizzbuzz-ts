@@ -33,11 +33,6 @@ color = "d73a4a"
 name = "chore"
 description = "Chore changes"
 
-[bug]
-color = "d73a4a"
-name = "bug"
-description = "Something isn't working"
-
 [refactor]
 color = "27C1FD"
 name = "refactor"
