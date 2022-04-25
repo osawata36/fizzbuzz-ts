@@ -10,10 +10,6 @@ describe('数値を文字列に変換する', () => {
   test("1を渡すと文字列'1'を返す", () => {
     expect(fizzbuzz.convert(1)).toBe('1')
   })
-
-  test("2を渡すと文字列'2'を返す", () => {
-    expect(fizzbuzz.convert(2)).toBe('2')
-  })
 })
 
 describe("3の倍数を渡すと文字列'Fizz'を返す", () => {
