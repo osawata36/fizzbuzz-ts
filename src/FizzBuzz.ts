@@ -1,11 +1,16 @@
 export class FizzBuzz {
 
   convert(num: number): string{
-    if(num%3===0){
-      return "Fizz"
-    }else if(num%5===0){
-      return "Buzz"
+    const canDivideByThree = num % 3 === 0
+    const canDivideByFive = num % 5 === 0
+
+    if (canDivideByThree && canDivideByFive) {
+      return 'FizzBuzz'
+    } else if (canDivideByThree) {
+      return 'Fizz'
+    } else if (canDivideByFive) {
+      return 'Buzz'
     }
-    return String(num)
+    return num.toString()
   }
 }
