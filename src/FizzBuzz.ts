@@ -6,6 +6,6 @@ export class FizzBuzz {
     }else if(num%5===0){
       return "Buzz"
     }
-    return String(num)
+    return num.toString()
   }
 }
