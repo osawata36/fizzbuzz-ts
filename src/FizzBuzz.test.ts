@@ -27,3 +27,9 @@ describe("5の倍数を渡すと文字列'Buzz'を返す", () => {
       expect(fizzbuzz.convert(5)).toBe('Buzz')
     })
 })
+
+describe("3と5両方の倍数を渡すと文字列'FizzBuzz'を返す", () => {
+  test("5を渡すと文字列'Buzz'を返す", () => {
+    expect(fizzbuzz.convert(15)).toBe('FizzBuzz')
+  })
+})
