@@ -53,3 +53,13 @@ mainブランチへのプルリク実行時に起動する。
 * tagのpushをトリガーに`create-release`フローが動く。
 * `create-release`でリリース作業（≒デプロイ）の実施後、GitHub releaseを作成する
 * GitHub release時は、`generate_release_notes`を使用するので、PullRequestにラベルを付けておく必要がある
+
+### Environmentsを使用した自動デプロイの承認
+
+GitHub Actionsを利用した自動デプロイは便利ですが、うっかり誰でも本番環境へのデプロイを動かせてしまうのは危険です。
+
+GitHub Environmentsを使うことで、デプロイ環境ごとの承認ルールなどを設定することができます。
+
+リポジトリのSettings->Environmentsで設定する。
+
+<img src="images/2022-04-26-11-58-19.png" border="1" width="80%">
