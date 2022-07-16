@@ -1,27 +1,12 @@
+[CI]
+color = "008672"
+name = "CI"
+description = "CI/CD"
+
 [breaking-change]
 color = "d73a4a"
 name = "breaking-change"
 description = "Breaking changes"
-
-[feature]
-color = "27C1FD"
-name = "feature"
-description = "New Features"
-
-[enhancement]
-color = "27C1FD"
-name = "enhancement"
-description = "Enhancement"
-
-[fix]
-color = "d73a4a"
-name = "fix"
-description = "Bug fix"
-
-[performance]
-color = "d73a4a"
-name = "performance"
-description = "Performance improvements"
 
 [bug]
 color = "d73a4a"
@@ -33,6 +18,46 @@ color = "d73a4a"
 name = "chore"
 description = "Chore changes"
 
+[dependencies]
+color = "0366d6"
+name = "dependencies"
+description = "Dependencies"
+
+[docs]
+color = "7057ff"
+name = "docs"
+description = "Documents"
+
+[duplicate]
+color = "cfd3d7"
+name = "duplicate"
+description = "This issue or pull request already exists"
+
+[enhancement]
+color = "27C1FD"
+name = "enhancement"
+description = "Enhancement"
+
+[feature]
+color = "27C1FD"
+name = "feature"
+description = "New Features"
+
+[fix]
+color = "d73a4a"
+name = "fix"
+description = "Bug fix"
+
+[invalid]
+color = "e4e669"
+name = "invalid"
+description = "This will not be worked on"
+
+[performance]
+color = "d73a4a"
+name = "performance"
+description = "Performance improvements"
+
 [refactor]
 color = "27C1FD"
 name = "refactor"
@@ -43,34 +68,7 @@ color = "a2eeef"
 name = "test"
 description = "Add test"
 
-[docs]
-color = "7057ff"
-name = "docs"
-description = "Documents"
-
-[dependencies]
-color = "0366d6"
-name = "dependencies"
-description = "Dependencies"
-
-[CI]
-color = "008672"
-name = "CI"
-description = "CI/CD"
-
-[duplicate]
-color = "cfd3d7"
-name = "duplicate"
-description = "This issue or pull request already exists"
-
 [wontfix]
 color = "ffffff"
 name = "wontfix"
 description = "This will not be worked on"
-
-[invalid]
-color = "e4e669"
-name = "invalid"
-description = "This will not be worked on"
-
-
