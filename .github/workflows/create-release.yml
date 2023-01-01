@@ -33,7 +33,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Create Release Notes
-        uses: actions/github-script@v4.1.1
+        uses: actions/github-script@v6.3.3
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
