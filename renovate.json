@@ -9,7 +9,7 @@
   "automerge": true,
   "branchConcurrentLimit": 0,
   "schedule": [
-    "every 2 weeks"
+    "after 9am and before 14pm on the first day of the month"
   ],
   "packageRules": [
     {
