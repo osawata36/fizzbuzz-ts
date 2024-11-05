@@ -10,7 +10,7 @@
   "branchConcurrentLimit": 0,
   "schedule": [
     "after 9am on the first day of the month",
-    "before 14pm on the first day of the month"
+    "before 2pm on the first day of the month"
   ],
   "packageRules": [
     {
