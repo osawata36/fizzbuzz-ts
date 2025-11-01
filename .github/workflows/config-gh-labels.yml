@@ -28,7 +28,7 @@ jobs:
 
       # https://docs.github.com/en/actions/language-and-framework-guides/using-python-with-github-actions#using-a-specific-python-version
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.x'
 
