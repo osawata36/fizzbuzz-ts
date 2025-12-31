@@ -33,7 +33,7 @@ jobs:
     # run that runs on: tag. (Using the GitHub token would
     # not run the workflow to prevent infinite recursion.)
     - name: Check out source
-      uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6
+      uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6
       with:
         ssh-key: ${{ secrets.DEPLOY_KEY }}
 
